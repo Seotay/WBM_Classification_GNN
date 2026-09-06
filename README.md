@@ -38,27 +38,30 @@ The proposed method converts CNN-based patch features into a graph and applies G
 ## Directory Structure
 
 ```text
-WBM_Classification_GNN/
-|-- .vscode/
-|-- checkpoints/
-|   |-- CNN_classifier.pth
-|   |-- VIG_classification-GraphConv.pth
-|   |-- VIG_classification-GraphSage.pth
-|   |-- VIG_classification-SAGE.pth
-|-- dataset/
-|   `-- dataset.py
-|-- figures/
-|   `-- workflow.png
-|-- model/
-|   |-- model_gat.py
-|   |-- model_gcn.py
-|   `-- model_graphsage.py
-|-- utils/
-|   |-- trainer.py
-|   `-- utils.py
-|-- __pycache__/
-|-- main_gat.py
-|-- main_gcn.py
-|-- main_graphsage.py
-`-- README.md
+project/
+    ├── checkpoints/
+    │   ├── CNN_classifier.pth
+    │   ├── VIG_classification-GraphConv.pth
+    │   ├── VIG_classification-GraphSage.pth
+    │   └── VIG_classification-SAGE.pth
+    │
+    ├── dataset/
+    │   └── dataset.py
+    │
+    ├── figures/
+    │   └── workflow.png
+    │
+    ├── model/
+    │   ├── model_gat.py
+    │   ├── model_gcn.py
+    │   └── model_graphsage.py
+    │
+    ├── utils/
+    │   ├── trainer.py
+    │   └── utils.py
+    │
+    ├── main_gat.py
+    ├── main_gcn.py
+    ├── main_graphsage.py
+    └── README.md
 ```

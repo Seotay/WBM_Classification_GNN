@@ -65,7 +65,7 @@ if __name__ == "__main__":
     optimizer = optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
     epochs = 30
     os.makedirs("./checkpoints", exist_ok=True)
-    model_save_path = "./checkpoints/seed_experiment/GCN/VIG_classification-GCN-k7_seed{}.pth".format(data_seed)
+    model_save_path = "./checkpoints/GCN/VIG_classification-GCN-k7_seed{}.pth".format(data_seed)
 
     
     early_stopping = EarlyStopping(patience=10, delta=0.0, path=model_save_path, verbose=True)
